@@ -25,6 +25,8 @@ FIG-2
 
 
 **Event** is a predefined Julia struct
+  
+  <img src = "./manual_fig2.png" />
 
 FIG-event
 
