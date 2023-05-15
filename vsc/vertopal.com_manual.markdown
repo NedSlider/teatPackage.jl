@@ -382,12 +382,9 @@ Format save:\<*function name*\>
 save, defines the function an Event will use to save data. By default, a
 dummy function which does nothing is used if save has not been defined.
 
-**Appendix 3**
-
-Example ‘Model’ Events file
+**Appendix 3** Example ‘Model’ Events file
 
 <img src = "./appendix3.png" />
-
 The first line is always 'Events' and the last line is always 'end'. The
 format of this file is the same as appendix 2. The same keywords are
 used. This example also uses the 'model' keyword.
@@ -395,7 +392,6 @@ used. This example also uses the 'model' keyword.
 **model**:nutrient(Float64) = 1000.0
 
 This creates a new variable, *nutrient*, which is attached to the model.
-
 In the above example the execute function is assigned to the function,
 *updateNutrient*().
 
