@@ -7,10 +7,8 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 **run!**(), calls two customised routines (**update_agent!**() and
 **update_model!**()) to perform Agents Based Modelling simulations.
 
-<img src="./manual_fig1.png"/>
+<img src="./manual_fig1.png" class="center"/>
 
-
-FIG 1
 
 
 
@@ -22,7 +20,7 @@ perform all of the required tasks for each Event.
 
 
 FIG-2
-<img src = "./manual_fig2.draw.png" />
+<img src = "./manual_fig2.png" />
 
 
 **Event** is a predefined Julia struct
