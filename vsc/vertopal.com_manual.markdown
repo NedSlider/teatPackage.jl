@@ -382,7 +382,7 @@ Format save:\<*function name*\>
 save, defines the function an Event will use to save data. By default, a
 dummy function which does nothing is used if save has not been defined.
 
-Appendix 3**
+**Appendix 3**
 
 Example ‘Model’ Events file
 
