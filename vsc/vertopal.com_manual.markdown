@@ -246,6 +246,8 @@ cycles
 
 Example input file for Catalyst reactions
 
+<img src = "./appendix1a.png" />
+
 The input file uses three keywords (**catalyst:,p,u0**)
 
 **p** defines a set of p values
@@ -260,6 +262,9 @@ The defined p-values are separated by spaces.
 **catalyst:** specifies the set of reactions (as specified in the
 Catalyst documentation)
 
+<img src = "./appendix1b.png" />
+
+
 **Appendix 1b**
 
 Example input for defining customised Julia ODE functions.
@@ -268,7 +273,13 @@ The keyword, *odeFunction*, (followed by colon) specifies a function
 defining ODEs (e.g. *testFunction!*) which must be defined in
 odeFunctions.jl
 
+<img src = "./appendix1_ode.png" />
+
 **Appendix 2**
+
+Example ‘Cell’ Events file
+
+<img src = "./appendix2.png" />
 
 The first line is always *Events*, and the last line is always *end*.
 
@@ -371,6 +382,12 @@ Format save:\<*function name*\>
 save, defines the function an Event will use to save data. By default, a
 dummy function which does nothing is used if save has not been defined.
 
+Appendix 3**
+
+Example ‘Model’ Events file
+
+<img src = "./appendix3.png" />
+
 The first line is always 'Events' and the last line is always 'end'. The
 format of this file is the same as appendix 2. The same keywords are
 used. This example also uses the 'model' keyword.
@@ -381,3 +398,6 @@ This creates a new variable, *nutrient*, which is attached to the model.
 
 In the above example the execute function is assigned to the function,
 *updateNutrient*().
+
+
+
