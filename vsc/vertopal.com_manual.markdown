@@ -382,7 +382,9 @@ Format save:\<*function name*\>
 save, defines the function an Event will use to save data. By default, a
 dummy function which does nothing is used if save has not been defined.
 
-**Appendix 3** Example ‘Model’ Events file
+**Appendix 3** 
+
+Example ‘Model’ Events file
 
 <img src = "./appendix3.png" />
 The first line is always 'Events' and the last line is always 'end'. The
