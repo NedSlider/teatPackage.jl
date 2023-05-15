@@ -13,7 +13,7 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 FIG 1
 
 
-<img src = "./man_fig1.drawio" />
+<img src = "./man_fig1.png" />
 
 
 The basic Agents *run!*() function has been extended to allow users to
@@ -24,7 +24,7 @@ perform all of the required tasks for each Event.
 
 
 FIG-2
-<img src = "./man_fig2.draw.io" />
+<img src = "./man_fig2.draw.png" />
 
 
 **Event** is a predefined Julia struct
