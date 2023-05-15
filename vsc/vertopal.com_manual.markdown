@@ -22,8 +22,6 @@ perform all of the required tasks for each Event.
 <img src = "./manual_fig2.png" />
 
 
-**Event** is a predefined Julia struct
-
 <img src = "./manual_fig2a.png" />
 
 
@@ -44,7 +42,7 @@ Events provide a simple mechanism which allows users to customise a
 simulation by choosing different events, Figure 2. This mechanism also
 allows programmers to add functionality by creating new Events.
 
-FIG-EVENT-EXAMPLE
+<img src = "./manual_fig2b.png" />
 
 FIG - main input
 
