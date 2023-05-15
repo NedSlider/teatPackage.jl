@@ -8,8 +8,10 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 **update_model!**()) to perform Agents Based Modelling simulations.
 
 <p class = "aligncenter">
-<img src="./manual_fig1.png"/>
 </p>
+<center>
+<img src="./manual_fig1.png"/>
+</center>
 
 
 
