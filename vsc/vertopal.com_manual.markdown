@@ -7,7 +7,14 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 **run!**(), calls two customised routines (**update_agent!**() and
 **update_model!**()) to perform Agents Based Modelling simulations.
 
-FIGURE-1
+FIGURE-10
+<img src="./man_fig1.png"/>
+
+
+
+
+
+
 
 The basic Agents *run!*() function has been extended to allow users to
 define an Agents model as a set of cells. Users control how cells behave
