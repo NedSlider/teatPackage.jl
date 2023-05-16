@@ -65,6 +65,8 @@ allows a user to customise both models and cells. Programmers can also
 use this feature to create new (more complex) Events which can
 communicate with each other.
 
+<img src="./ps_fig3.png"   class="center"/>
+
 **Building A Model**
 
 An example input file is shown above (the User Manual describes the
