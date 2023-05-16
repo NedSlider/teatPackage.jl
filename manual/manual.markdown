@@ -14,8 +14,6 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 </center>
 
 
-
-
 The basic Agents *run!*() function has been extended to allow users to
 define an Agents model as a set of cells. Users control how cells behave
 by attaching a set of 'Events' to each cell. An 'Event' is a Julia
@@ -121,7 +119,7 @@ Format *ModelEvents:*\<f*ilename*\>
 
 The key word, *ModelEvents*, must be followed by a colon, and then the
 name of the file which contains definitions for a set of ModelEvents.
-The format of this file is defined in Appendix C.
+The format of this file is defined in Appendix 3.
 
 The ModelEvents file is used to create all model Events dynamically (at
 run time) by using the data and functions defined in this file to create
