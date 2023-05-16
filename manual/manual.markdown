@@ -94,6 +94,8 @@ The functions must be defined in the file odeFunctions.jl
 
 The format for ODEs functions is define in Appendix 1b.
 
+**2. Defining Cell Events**
+
 **CellEvents**:cell_events.dat
 
 This command allows a user to define a set of Events which can be
