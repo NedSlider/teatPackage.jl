@@ -1,4 +1,10 @@
+
+
 **[Program Design]{.underline}**
+
+<p class = "aligncenter">
+</p>
+<img src="./ps_fig1.png"   class="center"/>
 
 The program uses the *Agents* package
 ([*https://juliadynamics.github.io/Agents.jl/stable/*](https://juliadynamics.github.io/Agents.jl/stable/))
