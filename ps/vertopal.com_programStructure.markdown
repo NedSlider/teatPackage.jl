@@ -69,6 +69,8 @@ communicate with each other.
 
 **Building A Model**
 
+<img src="./ps_fig4.png"   class="center"/>
+
 An example input file is shown above (the User Manual describes the
 input in more detail). Most of the code is responsible for parsing a set
 of input files and generating the model, set of cells and Events shown
