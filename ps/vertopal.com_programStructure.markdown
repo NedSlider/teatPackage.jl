@@ -17,6 +17,8 @@ customise the behaviour of the software. Both *update_cell!* and
 customised 'Events' by calling *executeCellEvents()* and
 *executeModelEvents()* respectively.
 
+<img src="./ps_fig2.png"   class="center"/>
+
 An Event is a Julia struct, Figure 2. Each Event must have a unique
 name. An Event also has a data Dict for storing all required data (e.g.
 variables). There is another Dict for storing the (customised) functions
