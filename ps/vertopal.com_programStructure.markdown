@@ -4,7 +4,7 @@
 
 <p class = "aligncenter">
 </p>
-<img src="./ps_fig1.png"   class="center"/>
+<img src="./ps_fig1.png"   align="middle"/>
 
 The program uses the *Agents* package
 ([*https://juliadynamics.github.io/Agents.jl/stable/*](https://juliadynamics.github.io/Agents.jl/stable/))
@@ -149,6 +149,8 @@ First an initial model is generated, and then the cells are added.
 **Appendix A:** Example of an Event which divides a Cell based on the
 amount of nutrient consumed.
 
+<img src="./ps_appendixA.png"   class="center"/>
+
 **Appendix B: The 'Cell' command**
 
 Format Cell:\<*cell-label*\> \<*input-file*\>
@@ -156,6 +158,8 @@ Format Cell:\<*cell-label*\> \<*input-file*\>
 e.g. Cell:A cell_ode.dat
 
 Example data file
+
+<img src="./ps_appendixB.png"   class="center"/>
 
 This example file defines a Catalyst reaction network. The data is
 parsed by parseCell.jl.
@@ -187,6 +191,8 @@ This file is parsed by the function,readEventsFile(). Data for each
 Event is extracted and parsed by the function, parseEvent\_().
 
 Example input data.
+
+<img src="./ps_appendixC.png"   class="center"/>
 
 The function, parseEvent\_(), uses a set of keywords (*CellEvent, data,
 cell, model, reset, equation, test,execute,save*) to parse the data
