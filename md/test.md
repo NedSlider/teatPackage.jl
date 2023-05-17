@@ -46,7 +46,11 @@
   
 </table> <table>
   <tr>
-    <td style="text-align:center" colspan="2">Code B</td>
+    <td style="text-align:center" colspan="2">
+    ```
+    Code Block
+    ```
+    </td>
   </tr>
     <td style="text-align:center" colspan="1">Code a</td>
     <td style="text-align:center" colspan="1">Code b</td>
