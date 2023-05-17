@@ -186,10 +186,6 @@ Figure 2b
 
 An example of two functions, timeToDivide() and divide_cell() which can be used to create an Event which decides when a cell should divide and then creates two new daughter cells. The variables, nutrient and fraction, are stored in the Event data Dict. They are updated, when necessary, by the Event.
 
-<img src = "./mainInputFile.png" />
-
-
-
 The main input file uses a set of keywords:
 
 **Cell**, **CellEvents**, **ModelEvents**, **Events**, **Initialise**,
@@ -383,6 +379,12 @@ cycles
 
 Example input file for Catalyst reactions
 
+<table>
+  <tr>
+    <td colspan="2">
+    </td>
+  </tr>
+</table>
 <img src = "./appendix1a.png" />
 
 The input file uses three keywords (**catalyst:,p,u0**)
@@ -399,8 +401,18 @@ The defined p-values are separated by spaces.
 **catalyst:** specifies the set of reactions (as specified in the
 Catalyst documentation)
 
-<img src = "./appendix1b.png" />
+<table>
+  <tr>
+    <td colspan="2">
+    </td>
+  </tr>
+</table>
 
+```
+catalyst:catalyst.dat
+p       s=1e4  d_m=0.1 n_s=0.5 n_r=7459  n_t=300 n_m=300 n_q=300 γ_max=1260  K_γ=7   v_t=726 K_t=1000    v_m=5800 K_m=1000        w_r_max=930     w_t_max=4.14    w_m_max=4.14    w_q_max=949 θ_r=427 θ_t=4.38        θ_m=4.38        θ_q=4.38        K_q=152219      h_q=4  kb=0.95e-2      ku=1    M=1e8
+u0      r=10   e_t=0   e_m=0   q=0    m_r=0   m_t=0   m_m=0  m_q=0   c_r=0   c_t=0  c_m=0   c_q=0   a=1000 s_i=0
+```
 
 **Appendix 1b**
 
@@ -410,6 +422,12 @@ The keyword, *odeFunction*, (followed by colon) specifies a function
 defining ODEs (e.g. *testFunction!*) which must be defined in
 odeFunctions.jl
 
+<table>
+  <tr>
+    <td colspan="2">
+    </td>
+  </tr>
+</table>
 <img src = "./appendix1_ode.png" />
 
 **Appendix 2**
