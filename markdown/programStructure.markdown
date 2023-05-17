@@ -164,6 +164,8 @@ communicate with each other.
   Write:Cell A r e_t e_m q m_r m_t m_m m_q c_r c_t c_m c_q a s_i
 ```
 
+Figure 4
+
 An example input file is shown above (the User Manual describes the
 input in more detail). Most of the code is responsible for parsing a set
 of input files and generating the model, set of cells and Events shown
@@ -171,7 +173,7 @@ in Figure 1.
 
 <img src="./ps_fig5.png"/>
 
-FIG 5
+Figure 5
 
 
 The function, *parseInputFile()*, parses the main input file and
