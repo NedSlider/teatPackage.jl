@@ -42,18 +42,6 @@ Figure 1
 
    </td>
 
-   </tr
-   >
-   <tr>
-     <td>
-   
-   '''julia
-   function x()
-   end
-   '''
-
-   </td>
-
   </tr>
 </table>
 
