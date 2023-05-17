@@ -7,10 +7,10 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 **run!**(), calls two customised routines (**update_agent!**() and
 **update_model!**()) to perform Agents Based Modelling simulations.
 
-<code>
+```
 function run!(model,update_agent!,update_model!)
-    n = 0                                                            
-    while ( n < maxCycles)                                 
+    n = 0          
+    while ( n < maxCycles)
         for agent in allagents(model)            
         update_agent!(agent)            
     end                                                    
@@ -18,7 +18,7 @@ function run!(model,update_agent!,update_model!)
     n += 1                                                
     end                                                                 
 end                                                                            
-</code>
+```
 
 Figure 1
 
