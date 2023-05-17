@@ -25,7 +25,8 @@ Figure 1
 
 <table>
   <tr>
-    <td align="center" colspan="2">
+    <td colspan="2">
+
     <code>
     function run!(model,update_agent!,update_model!)
         n = 0          
@@ -39,28 +40,7 @@ Figure 1
     </code>
 
     </td>
-  </tr>
-  <tr>
-    <td>
 
-    ```
-    function update_cell!(agent, model)     x
-        updateIntegration                   x
-        executeCellEvents(model,agent)      x                        
-    end                                     x
-    ```
-
-    </td>
-
-    <td colspan="1">
-    <code>                
-    function() update_model!(model)                   x
-        model.nSteps += 1                             x
-        executeModelEvents(model)                     x        
-    end                                               x 
-    </code>
-    </td>
-    
   </tr>
 </table>
 
