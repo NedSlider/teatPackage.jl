@@ -43,10 +43,11 @@ Figure 1
    </tr>
 
    <tr>
-
    <td>
-   function x()
-   end
+    function update_cell!(agent, model)
+        updateIntegration
+        executeCellEvents(model,agent)
+    end           
    </td>
 
    <td>
