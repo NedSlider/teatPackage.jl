@@ -35,18 +35,23 @@ Figure 1
         end                                                    
         update_model!(model)                      
         n += 1                                                
-    end                                                                          </code>
+    end                                                                          
+    </code>
+
     </td>
   </tr>
   <tr>
-    <td colspan="1">
-    <code>
+    <td>
+
+    ```
     function update_cell!(agent, model)     x
         updateIntegration                   x
         executeCellEvents(model,agent)      x                        
     end                                     x
-    </code>                                                
+    ```
+
     </td>
+
     <td colspan="1">
     <code>                
     function() update_model!(model)                   x
@@ -55,6 +60,7 @@ Figure 1
     end                                               x 
     </code>
     </td>
+    
   </tr>
 </table>
 
