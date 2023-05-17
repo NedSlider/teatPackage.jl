@@ -39,6 +39,11 @@
     <td colspan="1">Code 2</td>
   <tr>
   </tr>
+  
+  ```
+  code
+  ```
+  
 </table> <table>
   <tr>
     <td style="text-align:center" colspan="2">Code B</td>
