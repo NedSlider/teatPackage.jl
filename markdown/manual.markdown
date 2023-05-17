@@ -186,7 +186,23 @@ Figure 2b
 
 An example of two functions, timeToDivide() and divide_cell() which can be used to create an Event which decides when a cell should divide and then creates two new daughter cells. The variables, nutrient and fraction, are stored in the Event data Dict. They are updated, when necessary, by the Event.
 
+                                  **Main Input File**
+```
+  Cell:A cell_a.dat                                               # Catalyst input data
+  CellEvents:cell_events.dat                               # contains all predefined cell events
+  ModelEvents:model_events.dat                       # contains all predefined model events
+  Events:A updateGrowthA{updateGrowth(growthLimit=0.01,fraction=0.55)}
+  Events:model updateNutrientA{updateNutrient()}
+  Events:model saveCellData{saveData()}
+  Events:model cellCount{modelCellCount()}   # events attached to model
+  Initialise:demo.cells.dat                                    # contains the initial cells
+  Output:./demo file-prefix
+  u0:A steadystate.csv 1.0
+  Write:Cell A r e_t e_m q m_r m_t m_m m_q c_r c_t c_m c_q a s_i
+```
+
 The main input file uses a set of keywords:
+
 
 **Cell**, **CellEvents**, **ModelEvents**, **Events**, **Initialise**,
 **u0** , **Write**.
