@@ -28,20 +28,23 @@ Figure 1
     <td colspan="2">
     <code>
     function run!(model,update_agent!,update_model!)
-    n = 0          
-    while ( n < maxCycles)
-        for cell in allagents(model)            
-        update_cell!(agent)            
-    end                                                    
-    update_model!(model)                      
-    n += 1                                                
-    end                                                                 
-end                          
-    </code>
+        n = 0          
+        while ( n < maxCycles)
+            for cell in allagents(model)            
+            update_cell!(agent)            
+        end                                                    
+        update_model!(model)                      
+        n += 1                                                
+    end                                                                          </code>
     </td>
   </tr>
   <tr>
-    <td colspan="1">B1</td>
+    <td colspan="1">
+    function update_cell!(agent, model)
+        updateIntegration               
+        executeCellEvents(model,agent)                               
+    end                                                   
+    </td>
     <td colspan="1">B2</td>
   </tr>
 </table>
