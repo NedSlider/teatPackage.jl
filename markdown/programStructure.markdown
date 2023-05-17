@@ -171,9 +171,6 @@ in Figure 1.
 
 <img src="./ps_fig5.png"/>
 
-
-
-
 FIG 5
 
 
@@ -248,6 +245,27 @@ First an initial model is generated, and then the cells are added.
 amount of nutrient consumed.
 
 <img src="./ps_appendixA.png"   class="center"/>
+
+<table>
+  <tr>
+    <td>
+    TXT
+    </td>
+    <td>
+    ascii file
+    </td>
+  </tr>
+  <tr>
+  <td>
+  timeToDivide
+  </td>
+  <td>
+  divifr_cell
+  </td>
+  </tr>
+</table>
+
+
 
 **Appendix B: The 'Cell' command**
 
