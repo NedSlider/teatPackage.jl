@@ -7,7 +7,7 @@ build ABM (Agent Based Modelling) applications. The main Agents routine,
 **run!**(), calls two customised routines (**update_agent!**() and
 **update_model!**()) to perform Agents Based Modelling simulations.
 
-```
+```julia
 function run!(model,update_agent!,update_model!)
     n = 0          
     while ( n < maxCycles)
@@ -27,12 +27,13 @@ Figure 1
   <tr>
     <td>
 
-    ```
+    ```julia
     function run!(model,update_agent!,update_model!)
         n = 0          
         while ( n < maxCycles)
             for cell in allagents(model)            
-            update_cell!(agent)            
+                update_cell!(agent) 
+            end           
         end                                                    
         update_model!(model)                      
         n += 1                                                
