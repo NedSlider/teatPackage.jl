@@ -383,3 +383,7 @@ Event to a Dict{\<*event-name*\>,Event}.
 
 Format **Events:**\<*cell-label*\>
 \<*instance-name*\>**{**\<*Event-name*\>**(**\<*comma-separated-variables***)}**
+
+e.g. Events:A updateGrowthA{updateGrowth(growthLimit=1.0,fraction=0.6)}
+
+
