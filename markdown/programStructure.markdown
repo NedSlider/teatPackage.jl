@@ -239,7 +239,6 @@ The function, initialiseModel(), uses the data generated in steps 1-7
 
 First an initial model is generated, and then the cells are added.
 
-<img src="./ps_fig6.png"   class="center"/>
 
 **Appendix A:** Example of an Event which divides a Cell based on the
 amount of nutrient consumed.
@@ -288,11 +287,11 @@ amount of nutrient consumed.
      end
 
   </td>
-  
+
   <td>
 
    function divide_cell(model,cell,event)
-      model.lastCell += 2
+       model.lastCell += 2
        data = getfield(event,:data_)
        fraction = Events.getEventVariable("fraction",data)
        u1 = divideResources(cell,fraction)
