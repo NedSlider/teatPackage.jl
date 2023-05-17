@@ -25,7 +25,7 @@ Figure 1
 
 <table>
   <tr>
-    <td style="text-align:center" colspan="2">
+    <td align="center" colspan="2">
     <code>
     function run!(model,update_agent!,update_model!)
         n = 0          
