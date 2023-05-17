@@ -25,7 +25,7 @@ Figure 1
 
 <table>
   <tr>
-    <td colspan="2">
+    <td>
 
     <code>
     function run!(model,update_agent!,update_model!)
