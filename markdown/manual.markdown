@@ -399,6 +399,44 @@ The defined p-values are separated by spaces.
 **catalyst:** specifies the set of reactions (as specified in the
 Catalyst documentation)
 
+Reaction Network defined in:catalyst.dat
+
+```
+rn_lamda = @reaction_network begin
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), r --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), e_t --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), e_m --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), q --> ∅
+        ((w_r_max * a)/(θ_r + a)), ∅ --> m_r
+        ((w_t_max * a)/(θ_t + a)), ∅ --> m_t
+        ((w_m_max * a)/(θ_m + a)), ∅ --> m_m
+        ((w_q_max * a)/((θ_q + a)*(1 + (q/K_q)^h_q))), ∅ --> m_q
+        (((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M) + d_m), m_r --> ∅
+        (((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M) + d_m), m_t --> ∅
+        (((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M) + d_m), m_m --> ∅
+        (((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M) + d_m), m_q --> ∅
+        (kb,ku), m_r + r <--> c_r
+        (kb,ku), m_t + r <--> c_t
+        (kb,ku), m_m + r <--> c_m
+        (kb,ku), m_q + r <--> c_q
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), c_r --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), c_t --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), c_m --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), c_q --> ∅
+        (γ_max/(n_r * (K_γ + a))), a + c_r --> r + m_r + r
+        (γ_max/(n_t * (K_γ + a))), a + c_t --> r + m_t + e_t
+        (γ_max/(n_m * (K_γ + a))), a + c_m --> r + m_m + e_m
+        (γ_max/(n_q * (K_γ + a))), a + c_q --> r + m_q + q
+        ((γ_max * c_r * (n_r - 1))/(n_r * (K_γ + a))), a --> 0
+        ((γ_max * c_t * (n_t - 1))/(n_t * (K_γ + a))), a --> 0
+        ((γ_max * c_m * (n_m - 1))/(n_m * (K_γ + a))), a --> 0
+        ((γ_max * c_q * (n_q - 1))/(n_q * (K_γ + a))), a --> 0
+        ((e_m*v_m)/(K_m + s_i)), s_i --> n_s*a
+        ((e_t*v_t*s)/(K_t + s)), 0 --> s_i
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), s_i --> ∅
+        ((a*γ_max/((K_γ + a)))*(c_r + c_t + c_m + c_q)/M), a --> ∅
+end
+```
 
 **Appendix 1b**
 
