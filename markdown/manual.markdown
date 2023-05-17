@@ -27,7 +27,16 @@ Figure 1
   <tr>
     <td colspan="2">
     ```
-    Code A1
+    function run!(model,update_agent!,update_model!)
+    n = 0          
+    while ( n < maxCycles)
+        for cell in allagents(model)            
+        update_cell!(agent)            
+    end                                                    
+    update_model!(model)                      
+    n += 1                                                
+    end                                                                 
+end                          
     ```
     </td>
   </tr>
