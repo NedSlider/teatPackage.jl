@@ -420,7 +420,22 @@ odeFunctions.jl
 
 Example ‘Cell’ Events file
 
-<img src = "./appendix2.png" />
+```
+Events
+
+CellEvent:updateGrowth
+data:growthLimit(Float64) = 1.0
+data:fraction(Float64) = 0.60
+cell:growthProg(Float64) = 0.0
+data:growthIncrease(Float64) = 0.0
+reset:growthProg = 0.0, fraction = 0.5
+equation:growthRateEqn = ((c_q + c_m + c_t + c_r) * (γ_max*a/(K_γ + a)))/M
+test:checkGrowth
+execute:divideByGrowth
+save:dontSave
+
+end
+```
 
 The first line is always *Events*, and the last line is always *end*.
 
