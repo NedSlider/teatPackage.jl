@@ -25,7 +25,7 @@ Figure 1
 
 <table>
   <tr>
-    <td colspan="2">
+    <td align="centre" colspan="2">
 
     function run!(model,update_agent!,update_model!)
         n = 0          
@@ -116,7 +116,6 @@ end
 Figure 2a Event is a predefined Julist struct
 
 
-<img src = "./manual_fig2a.png" />
 
 
 Each **Event** has a unique name, a Dictionary (for storing all required
@@ -136,8 +135,36 @@ Events provide a simple mechanism which allows users to customise a
 simulation by choosing different events, Figure 2. This mechanism also
 allows programmers to add functionality by creating new Events.
 
+<table>
+  <tr>
+    <td>
+
+    function x()
+    end
+
+    </td>
+
+    <td>
+
+    function y()
+    end
+
+    </td>
+
+  </tr>
+</table>
+
+Table
+
 <img src = "./manual_fig2b.png" />
 
+
+<table>
+  <tr>
+    <td colspan="2">
+    </td>
+  </tr>
+</table>
 
 An example of two functions, timeToDivide() and divide_cell() which can be used to create an Event which decides when a cell should divide and then creates two new daughter cells. The variables, nutrient and fraction, are stored in the Event data Dict. They are updated, when necessary, by the Event.
 
