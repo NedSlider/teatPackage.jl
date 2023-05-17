@@ -446,13 +446,22 @@ The keyword, *odeFunction*, (followed by colon) specifies a function
 defining ODEs (e.g. *testFunction!*) which must be defined in
 odeFunctions.jl
 
-<table>
-  <tr>
-    <td colspan="2">
-    </td>
-  </tr>
-</table>
-<img src = "./appendix1_ode.png" />
+```
+odeFunction:testFunction!
+p	thetar=426.8693338968694	k_cm=0.005990373118888	s0=10000.0	
+gmax=1260.0	cl=0.0	thetax=4.379733394834643	Kt=1000.0	M=1.0e8
+we=4.139172187824451	Km=1000.0	vm=5800.0	nx=300.0	Kq=15221
+9.040373749	Kp=180.1378030928276	vt=726.0	wr=929.9678874564831	
+wq=948.9349882947897	wp=0.0	nq=4.0	nr=7549.0	ns=0.5	kurep=10000.0	
+kbrep=1.0	wmaxrep=1.0	dmrep=0.34657359027997264	dprep=0.17328679
+513998632	
+u0	rmr=807.530517658162	em=7066.62814403594	rmq=2316.16746788774	
+rmt=69.1538861165317	et=7066.62758622631	rmm=69.1538892849256	mt=9.640
+96853393699	mm=9.64097064704617	q=236681.293193619	si=128.404551112
+062	mq=322.904581569518	mr=5.94267303259607	r=17.3282796528522	
+a=9.17329183561663	rep=0.0	mrep=0.0	rmrep=0.0
+```
+
 
 **Appendix 2**
 
@@ -580,7 +589,19 @@ dummy function which does nothing is used if save has not been defined.
 
 Example ‘Model’ Events file
 
-<img src = "./appendix3.png" />
+```
+Events
+
+ ModelEvent:updateNutrient
+ data:cellCount(Int32) = 1
+ model:nutrient(Float64) = 1000.0
+ data:totalProduct(Float64) = 0.0
+ data:productSymbol(Symbol) = s_i
+ execute:updateNutrient
+
+ end
+```
+
 The first line is always 'Events' and the last line is always 'end'. The
 format of this file is the same as appendix 2. The same keywords are
 used. This example also uses the 'model' keyword.
