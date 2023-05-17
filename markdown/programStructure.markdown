@@ -169,7 +169,12 @@ input in more detail). Most of the code is responsible for parsing a set
 of input files and generating the model, set of cells and Events shown
 in Figure 1.
 
-<img src="./ps_fig5.png"   class="center"/>
+<img src="./ps_fig5.html"   class="center"/>
+
+
+
+
+FIG 5
 
 
 The function, *parseInputFile()*, parses the main input file and
