@@ -45,16 +45,22 @@ Figure 1
    <tr>
    <td>
 
+    ```julia
     function update_cell!(agent, model)
         updateIntegration
         executeCellEvents(model,agent)
-    end           
+    end     
+    ```      
    
    </td>
 
    <td>
+
+   ```julia
    function y()
    end
+   ```
+
    </td>
 
   </tr>
