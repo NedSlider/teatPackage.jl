@@ -44,10 +44,12 @@ Figure 1
 
    <tr>
    <td>
+
     function update_cell!(agent, model)
         updateIntegration
         executeCellEvents(model,agent)
     end           
+   
    </td>
 
    <td>
