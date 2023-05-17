@@ -47,9 +47,7 @@
 </table> <table>
   <tr>
     <td style="text-align:center" colspan="2">
-    <code>
-    Code Block
-    </code>
+    <code>Code Block</code>
     </td>
   </tr>
     <td style="text-align:center" colspan="1"><code>Code a</code></td>
