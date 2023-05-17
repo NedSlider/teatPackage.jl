@@ -162,8 +162,7 @@ communicate with each other.
   Output:./demo file-prefix
   u0:A steadystate.csv 1.0
   Write:Cell A r e_t e_m q m_r m_t m_m m_q c_r c_t c_m c_q a s_i
-
-<img src="./ps_fig4.png"   class="center"/>
+```
 
 An example input file is shown above (the User Manual describes the
 input in more detail). Most of the code is responsible for parsing a set
