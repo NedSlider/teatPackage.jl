@@ -69,10 +69,10 @@ Figure 1
 
     function executeCellEvents(model,cell)
         eventList = getfield(cell,:events_)
-        for event in eventList                   
+        for event in eventList
             if(event.test(model,cell,event))
                 event.execute(model,cell,event)
-            end                                     
+            end 
         end                                               
     end                                                          
 
@@ -81,13 +81,14 @@ Figure 1
   <td>
 
       function executeModelEvents(model)
-           cell = nothing                         
-           eventList = model.events     
-            for event in eventList            
+           cell = nothing
+           eventList = model.events
+            for event in eventList 
                if(event.test(model,cell,event))
                    event.execute(model,cell,event)
-            end                             
-        end                       
+                end
+            end 
+        end
 
   </td>
 
