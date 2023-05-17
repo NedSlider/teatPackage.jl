@@ -40,10 +40,12 @@ Figure 1
   </tr>
   <tr>
     <td colspan="1">
+    <code>
     function update_cell!(agent, model)
         updateIntegration               
         executeCellEvents(model,agent)                               
-    end                                                   
+    end   
+    </code>                                                
     </td>
     <td colspan="1">B2</td>
   </tr>
