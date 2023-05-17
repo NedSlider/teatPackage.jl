@@ -138,7 +138,14 @@ allows programmers to add functionality by creating new Events.
 <table>
   <tr>
   <td>
+  
+     functionTimeToDivide()
+     end
 
+  </td>
+
+    <td>
+    
     function timToDivide()
     eventData = getfield(event,:data_)
        nutrient = Events.getEventVariable("nutrient",eventData)
