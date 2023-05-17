@@ -44,7 +44,8 @@
   code
   ```
   
-</table> <table>
+</table> 
+<table BORDER="0">
   <tr>
     <td style="text-align:center" colspan="2">
     <code>Code Block</code>
