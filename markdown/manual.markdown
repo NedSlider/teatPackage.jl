@@ -160,22 +160,7 @@ allows programmers to add functionality by creating new Events.
 
   </td>
 
-  <td>
-
-  function divide_cell(model,cell,event)  
-    model.lastCell += 2
-    data = getfield(event,:data_)
-    fraction = Events.getEventVariable("fraction",data)
-    u1 = divideResources(cell,fraction)
-    u2 = divideResources(cell,1.0-fraction)
-    cellLineage = getfield(cell,:lineage_)
-    cellLineage.status_ = "divided"
-    cell1 = createNewCell(model,cell,nextAgent,u1,(0.0,0.0),cellIndex)
-    cell2 = createNewCell(model,cell,nextAgent+1,u2,(0.0,0.0),cellIndex)
-     kill_agent!(cell,model)
-    end
-
-  </td>
+  
   </tr>
 </table>
 
