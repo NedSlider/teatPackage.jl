@@ -241,6 +241,9 @@ The function, initialiseModel(), uses the data generated in steps 1-7
 
 First an initial model is generated, and then the cells are added.
 
+<img src="./ps_fig6.png"/>
+
+Once the model has been built it is written out to a  serialized file (.jls).
 
 **Appendix A:** Example of an Event which divides a Cell based on the
 amount of nutrient consumed.
