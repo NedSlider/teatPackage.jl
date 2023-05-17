@@ -137,20 +137,12 @@ allows programmers to add functionality by creating new Events.
 
 <table>
   <tr>
-    <td>
-
-    function x()
-    end
-
-    </td>
-
-    <td>
-
-    function y()
-    end
-
-    </td>
-
+  <td>
+  xxxx
+  </td>
+  <td>
+  cccc
+  </td>
   </tr>
 </table>
 
