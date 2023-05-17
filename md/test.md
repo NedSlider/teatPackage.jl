@@ -39,5 +39,16 @@
     <td colspan="1">Code 2</td>
   <tr>
   </tr>
+</table> <table>
+  <tr>
+    <td style="text-align:center" colspan="2">Code B</td>
+  </tr>
+    <td style="text-align:center" colspan="1">Code a</td>
+    <td style="text-align:center" colspan="1">Code b</td>
+  <tr>
+  </tr>
 </table>
+
+
+
 
