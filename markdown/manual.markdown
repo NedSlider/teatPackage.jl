@@ -154,9 +154,12 @@ allows programmers to add functionality by creating new Events.
   </td>
 
 
+  <td>
   function divide_cell(model,cell,event)
   end
-  
+
+  </td>
+
   <td>
 
   function divide_cell(model,cell,event)  
