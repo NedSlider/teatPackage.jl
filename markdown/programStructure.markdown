@@ -2,13 +2,6 @@
 
 **[Program Design]{.underline}**
 
-<p class = "aligncenter">
-</p>
-<img src="./ps_fig1.png"   align="middle"/>
-
-
-=======================================
-
 <table>
   <tr>
     <td align="centre" colspan="2">
@@ -81,16 +74,12 @@
 </table>
 
 
-===========================================
-
-
-
-
+Figure 1
 
 
 The program uses the *Agents* package
 ([*https://juliadynamics.github.io/Agents.jl/stable/*](https://juliadynamics.github.io/Agents.jl/stable/))
-to simulate collections of cells. The main routine (*run!*) requires two
+to simulate collections of cells. The main routine (*run!*), Figure 1, requires two
 customised functions, *update_cell!* and *update_model!*, to perform an
 ABM (Agents Based Model) simulation. To improve the overall flexibility
 the current design uses 'Events' which allow users and programmers to
@@ -99,7 +88,16 @@ customise the behaviour of the software. Both *update_cell!* and
 customised 'Events' by calling *executeCellEvents()* and
 *executeModelEvents()* respectively.
 
-<img src="./ps_fig2.png"   class="center"/>
+
+```julia
+mutable struct Event <: AbstractEvent
+name_::String                      
+name_::String                      
+  functions_::Dict{Symbol,Any}
+global_::Bool                        
+end                                                      
+```
+Figure 2
 
 An Event is a Julia struct, Figure 2. Each Event must have a unique
 name. An Event also has a data Dict for storing all required data (e.g.
