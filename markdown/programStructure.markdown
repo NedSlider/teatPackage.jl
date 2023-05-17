@@ -260,9 +260,14 @@ amount of nutrient consumed.
     
   </td>
   <td>
-
-     xxxx
   
+      CellEvent:divideByTime 
+      data:nutrient(Float64) = 0.00005
+      data:fraction(Float64) = 0.5
+      test:timeToDivide
+      execute:divide_cell
+      save:do_nothing
+
   </td>
   </tr>
 </table>
