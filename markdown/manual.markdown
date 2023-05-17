@@ -95,13 +95,7 @@ Figure 1
   </tr>
 </table>
 
-====================================================================
-<p class = "aligncenter">
-</p>
-<center>
-<img src="./manual_fig1.png"/>
-</center>
-
+Figure 2
 
 The basic Agents *run!*() function has been extended to allow users to
 define an Agents model as a set of cells. Users control how cells behave
@@ -110,7 +104,16 @@ struct consisting of a set of customised data and functions which
 perform all of the required tasks for each Event.
 
 
-<img src = "./manual_fig2.png" />
+```julia
+mutable struct Event <: AbstractEvent
+name_::String                      
+name_::String                      
+  functions_::Dict{Symbol,Any}
+global_::Bool                        
+end                                                      
+```
+
+Figure 2a Event is a predefined Julist struct
 
 
 <img src = "./manual_fig2a.png" />
