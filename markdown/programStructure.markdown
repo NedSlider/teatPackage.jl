@@ -250,22 +250,14 @@ amount of nutrient consumed.
   <tr>
     <td>
 
-        ```
-        Cell Events are defined in a separate ascii file. This is explained in detail in the User Manual. Users define the data (variables)  and functions required. In this example 3 variables have been declared:nutrient, maxSteps, fraction. The test() function has been assigned to timeToDivide(). When this returns true, divide_cell() is executed.
-        ```
+      ```
+      Cell Events are defined in a separate ascii file. 
+      
+      ```
     
   </td>
     <td>
-
-        ```
-        CellEvent:divideByTime 
-        data:nutrient(Float64) = 0.00005
-        data:fraction(Float64) = 0.5
-        test:timeToDivide
-        execute:divide_cell
-        save:do_nothing
-        ```
-
+     xxxx
   </td>
   </tr>
 </table>
