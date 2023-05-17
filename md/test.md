@@ -50,7 +50,7 @@
     <code>Code Block</code>
     </td>
   </tr>
-    <td style="text-align:center" colspan="1"><code>Code a</code></td>
+    <td style="text-align:center" colspan="1" class="noBorder"><code>Code a</code></td>
     <td style="text-align:center" colspan="1">Code b</td>
   <tr>
   </tr>
