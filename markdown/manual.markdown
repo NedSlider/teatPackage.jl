@@ -138,7 +138,7 @@ allows programmers to add functionality by creating new Events.
 <table>
   <tr>
   <td>
-  
+
   function timeToDivide(model,cell,event)
       eventData = getfield(event,:data_)
        nutrient = Events.getEventVariable("nutrient",eventData)
@@ -150,7 +150,7 @@ allows programmers to add functionality by creating new Events.
       end
       return(false)                                                              
     end
-    
+
   </td>
   <td>
   cccc
