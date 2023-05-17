@@ -27,7 +27,7 @@ Figure 1
   <tr>
     <td>
 
-    ```julia
+    <code>
     function run!(model,update_agent!,update_model!)
         n = 0          
         while ( n < maxCycles)
@@ -38,7 +38,7 @@ Figure 1
         update_model!(model)                      
         n += 1                                                
     end                                                                          
-    ```
+    </code>
 
    </td>
 
