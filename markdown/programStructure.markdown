@@ -260,13 +260,51 @@ amount of nutrient consumed.
     
   </td>
   <td>
-  
+
       CellEvent:divideByTime 
       data:nutrient(Float64) = 0.00005
       data:fraction(Float64) = 0.5
       test:timeToDivide
       execute:divide_cell
       save:do_nothing
+
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+
+      function timeToDivide(model,cell,event)
+         eventData = getfield(event,:data_)
+         nutrient = Events.getEventVariable("nutrient",eventData)
+         nCells = length(model.agents)
+         max = 0.05 - nCells * nutrient
+         nSteps = getfield(cell,:nSteps_)
+         probability = nSteps * rand(Uniform(0.0,max))
+         if(probability > 1.0)
+             return(true)
+         end
+         return(false)
+     end
+
+  </td>
+  
+  <td>
+
+   function divide_cell(model,cell,event)
+      model.lastCell += 2
+       data = getfield(event,:data_)
+       fraction = Events.getEventVariable("fraction",data)
+       u1 = divideResources(cell,fraction)
+       u2 = divideResources(cell,1.0-fraction)
+
+       cellLineage = getfield(cell,:lineage_)
+       cellLineage.status_ = "divided"
+       cell1 = createNewCell(model,cell,nextAgent,u1,(0.0,0.0),cellIndex)
+       cell2 = createNewCell(model,cell,nextAgent+1,u2,(0.0,0.0),cellIndex)
+       kill_agent!(cell,model)
+       return()
+     end
 
   </td>
   </tr>
