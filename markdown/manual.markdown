@@ -20,13 +20,16 @@ function run!(model,update_agent!,update_model!)
 end                                                                            
 ```
 
-                  Figure 1
+Figure 1
 
 
 <table>
   <tr>
-    <td colspan="2">Code A1</td>
-    <td>Code A2</td>
+    <td colspan="2">
+    <code>
+    Code A1
+    </code>
+    </td>
   </tr>
   <tr>
     <td colspan="1">B1</td>
