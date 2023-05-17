@@ -14,4 +14,21 @@
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
-</table> 
+</table>
+<table>
+  <tr>
+    <td>code A</td>
+    <td>code B</td>
+    <td>code C</td>
+    <td>code D</td>
+  </tr>
+  <tr>
+    <td>code a</td>
+    <td>code b</td>
+    <td>code c</td>
+    <td>code d</td>
+  </tr>
+</table>
+
+
+
