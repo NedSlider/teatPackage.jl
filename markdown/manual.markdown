@@ -186,7 +186,9 @@ Figure 2b
 
 An example of two functions, timeToDivide() and divide_cell() which can be used to create an Event which decides when a cell should divide and then creates two new daughter cells. The variables, nutrient and fraction, are stored in the Event data Dict. They are updated, when necessary, by the Event.
 
-                                  **Main Input File**
+  **Main Input File**
+
+
 ```
   Cell:A cell_a.dat                                               # Catalyst input data
   CellEvents:cell_events.dat                               # contains all predefined cell events

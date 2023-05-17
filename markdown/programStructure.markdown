@@ -140,14 +140,28 @@ set of cell variables can be handled by a new Event). Cell and model
 variables can also be used by Events to communicate with each other.
 
 The cell and model keywords enable Events to add new variables to
-CellData (struct which defines each cell) and model, Figure 3. This
+CellData (struct which defines each cell) and model. This
 allows a user to customise both models and cells. Programmers can also
 use this feature to create new (more complex) Events which can
 communicate with each other.
 
-<img src="./ps_fig3.png"   class="center"/>
 
 **Building A Model**
+
+
+  **Main Input File**
+```
+  Cell:A cell_a.dat                                               # Catalyst input data
+  CellEvents:cell_events.dat                               # contains all predefined cell events
+  ModelEvents:model_events.dat                       # contains all predefined model events
+  Events:A updateGrowthA{updateGrowth(growthLimit=0.01,fraction=0.55)}
+  Events:model updateNutrientA{updateNutrient()}
+  Events:model saveCellData{saveData()}
+  Events:model cellCount{modelCellCount()}   # events attached to model
+  Initialise:demo.cells.dat                                    # contains the initial cells
+  Output:./demo file-prefix
+  u0:A steadystate.csv 1.0
+  Write:Cell A r e_t e_m q m_r m_t m_m m_q c_r c_t c_m c_q a s_i
 
 <img src="./ps_fig4.png"   class="center"/>
 
