@@ -319,7 +319,11 @@ e.g. Cell:A cell_ode.dat
 
 Example data file
 
-<img src="./ps_appendixB.png"   class="center"/>
+```
+catalyst:catalyst.dat    # Catalyst reaction
+p	s=1e4	d_m=0.1	n_s=0.5	n_r=7459	n_t=300	n_m=300	n_q=300	γ_max=1260	K_γ=7	v_t=726 K_t=1000	v_m=5800	K_m=1000	w_r_max=930	w_t_max=4.14	w_m_max=4.14	w_q_max=949	θ_r=427	θ_t=4.38	θ_m=4.38	θ_q=4.38	K_q=152219	h_q=4	kb=0.95e-2	ku=1	M=1e8
+u0	r=10	e_t=0	e_m=0	q=0	m_r=0	m_t=0	m_m=0	m_q=0	c_r=0	c_t=0	c_m=0	c_q=0	a=1000	s_i=0
+```
 
 This example file defines a Catalyst reaction network. The data is
 parsed by parseCell.jl.
@@ -352,7 +356,20 @@ Event is extracted and parsed by the function, parseEvent\_().
 
 Example input data.
 
-<img src="./ps_appendixC.png"   class="center"/>
+```
+Events
+CellEvent:updateGrowth
+data:growthLimit(Float64) = 1.0
+data:fraction(Float64) = 0.6
+data:growthIncrease(Float64) = 0.0
+cell:growthProg(Float64) = 0.0
+reset:growthProg = 0.0,growthIncrease = 0.0
+equation:growthRateEqn = ((c_q + c_m + c_t + c_r) * (γ_max*a/(K_γ + a)))/M
+test:checkGrowth
+execute:divideByGrowth
+save:dontSave
+end
+```
 
 The function, parseEvent\_(), uses a set of keywords (*CellEvent, data,
 cell, model, reset, equation, test,execute,save*) to parse the data
