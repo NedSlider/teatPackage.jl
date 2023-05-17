@@ -40,6 +40,15 @@ Figure 1
 
    </td>
 
+   </tr>
+   
+   <tr>
+
+   <td>
+   function x()
+   end
+   </td>
+
   </tr>
 </table>
 
