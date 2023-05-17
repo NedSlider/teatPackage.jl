@@ -39,7 +39,19 @@ Figure 1
         n += 1                                                
     end                                                                          
     ```
-    
+
+   </td>
+
+   </tr
+   >
+   <tr>
+     <td>
+   
+   '''julia
+   function x()
+   end
+   '''
+
    </td>
 
   </tr>
