@@ -1,3 +1,9 @@
+
+<style>
+table {
+    border-collapse: collapse;
+}
+</style>
 <table>
   <tr>
     <th>Company</th>
