@@ -48,6 +48,12 @@ Figure 1
     </code>                                                
     </td>
     <td colspan="1">B2</td>
+    <code>
+    function() update_model!(model)
+        model.nSteps += 1           
+        executeModelEvents(model)                              
+    end                                                  
+    </code>
   </tr>
 </table>
 
