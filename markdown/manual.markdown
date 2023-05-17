@@ -140,6 +140,15 @@ allows programmers to add functionality by creating new Events.
   <td>
 
     function x()
+    eventData = getfield(event,:data_)
+       nutrient = Events.getEventVariable("nutrient",eventData)
+       nCells = length(model.agents)
+       max = 0.05 - nCells * nutrient
+       probability = nSteps * rand(Uniform(0.0,max))
+       if(probability > 1.0)                        
+           return(true)
+       end
+       return(false)
     end
 
   </td>
