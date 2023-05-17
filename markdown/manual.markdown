@@ -26,7 +26,7 @@ Figure 1
 <table>
   <tr>
     <td colspan="2">
-    ```
+    <code>
     function run!(model,update_agent!,update_model!)
     n = 0          
     while ( n < maxCycles)
@@ -37,7 +37,7 @@ Figure 1
     n += 1                                                
     end                                                                 
 end                          
-    ```
+    </code>
     </td>
   </tr>
   <tr>
