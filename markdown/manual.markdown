@@ -139,6 +139,11 @@ allows programmers to add functionality by creating new Events.
   <tr>
   <td>
 
+    function x()
+    end
+
+  </td>
+
   function timeToDivide(model,cell,event)
       eventData = getfield(event,:data_)
        nutrient = Events.getEventVariable("nutrient",eventData)
