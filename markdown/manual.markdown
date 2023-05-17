@@ -47,13 +47,14 @@ Figure 1
     end   
     </code>                                                
     </td>
-    <td colspan="1">B2</td>
+    <td colspan="1">
     <code>
     function() update_model!(model)
         model.nSteps += 1           
         executeModelEvents(model)                              
     end                                                  
     </code>
+    </td>
   </tr>
 </table>
 
