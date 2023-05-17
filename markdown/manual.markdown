@@ -26,9 +26,9 @@ Figure 1
 <table>
   <tr>
     <td colspan="2">
-    <code>
+    ```
     Code A1
-    </code>
+    ```
     </td>
   </tr>
   <tr>
