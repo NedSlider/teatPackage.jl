@@ -31,4 +31,13 @@
 </table>
 
 
+<table>
+  <tr>
+    <td colspan="2">Code B</td>
+  </tr>
+    <td colspan="1">Code 1</td>
+    <td colspan="1">Code 2</td>
+  <tr>
+  </tr>
+</table>
 
