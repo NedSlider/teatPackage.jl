@@ -41,18 +41,18 @@ Figure 1
   <tr>
     <td colspan="1">
     <code>
-    function update_cell!(agent, model)
-        updateIntegration               
-        executeCellEvents(model,agent)                               
-    end   
+    function update_cell!(agent, model)     x
+        updateIntegration                   x
+        executeCellEvents(model,agent)      x                        
+    end                                     x
     </code>                                                
     </td>
     <td colspan="1">
-    <code>
-    function() update_model!(model)
-        model.nSteps += 1           
-        executeModelEvents(model)                              
-    end                                                  
+    <code>                
+    function() update_model!(model)                   x
+        model.nSteps += 1                             x
+        executeModelEvents(model)                     x        
+    end                                               x 
     </code>
     </td>
   </tr>
