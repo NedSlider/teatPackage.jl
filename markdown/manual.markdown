@@ -71,7 +71,7 @@ Figure 1
         eventList = getfield(cell,:events_)
         for event in eventList                   
             if(event.test(model,cell,event))
-                 event.execute(model,cell,event)
+                event.execute(model,cell,event)
             end                                     
         end                                               
     end                                                          
