@@ -245,8 +245,6 @@ First an initial model is generated, and then the cells are added.
 **Appendix A:** Example of an Event which divides a Cell based on the
 amount of nutrient consumed.
 
-<img src="./ps_appendixA.png"   class="center"/>
-
 <table>
   <tr>
     <td>
