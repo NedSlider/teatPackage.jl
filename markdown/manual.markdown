@@ -39,8 +39,8 @@ Figure 1
         n += 1                                                
     end                                                                          
     ```
-
-     </td>
+    
+   </td>
 
   </tr>
 </table>
