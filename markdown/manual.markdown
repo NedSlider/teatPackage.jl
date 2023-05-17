@@ -62,6 +62,36 @@ Figure 1
    </td>
 
   </tr>
+
+  <tr>
+
+  <td>
+
+    function executeCellEvents(model,cell)
+        eventList = getfield(cell,:events_)
+        for event in eventList                   
+            if(event.test(model,cell,event))
+                 event.execute(model,cell,event)
+            end                                     
+        end                                               
+    end                                                          
+
+  </td>
+
+  <td>
+
+      function executeModelEvents(model)
+           cell = nothing                         
+           eventList = model.events     
+            for event in eventList            
+               if(event.test(model,cell,event))
+                   event.execute(model,cell,event)
+            end                             
+        end                       
+
+  </td>
+
+  </tr>
 </table>
 
 ====================================================================
