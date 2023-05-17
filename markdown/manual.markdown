@@ -138,13 +138,6 @@ allows programmers to add functionality by creating new Events.
 <table>
   <tr>
   <td>
-  
-     functionTimeToDivide()
-     end
-
-  </td>
-
-    <td>
     
     function timToDivide()
     eventData = getfield(event,:data_)
@@ -160,6 +153,10 @@ allows programmers to add functionality by creating new Events.
 
   </td>
 
+
+  function divide_cell(model,cell,event)
+  end
+  
   <td>
 
   function divide_cell(model,cell,event)  
